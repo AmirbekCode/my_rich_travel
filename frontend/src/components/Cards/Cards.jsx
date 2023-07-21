@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 function Cards() {
     return (
+
         <div className="Cards">
             <div className="Infos">
                 <h3 className="d">Qayerga borishni xoxlaysiz ?</h3>
@@ -18,6 +19,8 @@ function Cards() {
 
 
             <div className="Card_box">
+
+                <Link to="Infos">
                 <div className="Card">
                     <img src={Dubai} className="city_img" />
                     <div className="card_infos">
@@ -30,7 +33,8 @@ function Cards() {
                         </div>
                     </div>
                     
-                </div>
+                </div>                
+                </Link>
                 <div className="Card">
                     <img src={usa} className="city_img" />
                     <div className="card_infos">
