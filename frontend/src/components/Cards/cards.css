@@ -1,0 +1,85 @@
+.Cards {
+    margin: 50px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.205);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Infos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.subtitle {
+    font-weight: 300;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.Card:hover .city_img{
+    scale: 1.1;
+    transition: ease-in 0.4s;
+}
+
+.Card:hover {
+background: rgba(0, 0, 0, 0);
+transition: 0.3s;
+}
+
+.city_img {
+    position: absolute;
+    border-radius: 10px;
+    width: 250px;
+    height: 350px;
+    z-index: -999;
+}
+
+.city_img:hover {
+    scale: 1.1;
+}
+
+.Card_box {
+    display: flex;
+    gap: 25px;
+}
+
+.country_name {
+    position: relative;
+    color: #fff;
+}
+
+.card_infos {
+    position: relative;
+    flex-direction: column;
+    top: 200px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info_flag {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.707);
+}
+
+.flag {
+    display: flex;
+    gap: 10px;
+}
+
+.flagimg {
+    width: 20px;
+}
